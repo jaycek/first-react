@@ -22,12 +22,18 @@ else{
     customStyle.color='blue'
 
 }
+
+const handleClick = ()=>{
+  console.log("You clicked me!")
+}
+
 const Header = () => {
   return (
     <div>
       <h1 className='head'>Today's date is {date}</h1>
       <img src={img} alt="" />
       <h3 style={customStyle}>Good {greeting} India!</h3>
+      <button onClick={handleClick}>Click Me!</button>
     </div>
   )
 }
